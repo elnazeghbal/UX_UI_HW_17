@@ -11,19 +11,20 @@
 
 .logo {
   width: 190%;
-  height: 25%;
+  height: 15%;
   border-radius: 30%;
   background-size: cover;
   text-align: right;
   float: left;
-  margin-top: 3.5em;
+  margin-top: 4em;
+  float: right;
+  margin-right: -3em;
 }
 
 .text-frame {
   margin-top: 2em;
   /* text-align: center;*/
   color: rgb(151, 33, 112);
-
   float: left;
 }
 
@@ -33,6 +34,7 @@
 }
 .heroImg {
   text-align: left;
+  margin-left: 2em;
 }
 
 .heaDer {
@@ -42,8 +44,8 @@
 }
 
 .boTTonHome {
-  background-color: rgb(199, 48, 149);
-  border-color: rgb(170, 47, 170);
+  background-color: rgb(151, 33, 112);
+  border-color: rgb(151, 33, 112);
 }
 .bottonHome {
   text-align: center;
@@ -71,12 +73,14 @@
   grid-template-rows: 300px 300px 300px;
   grid-template-columns: 1fr 1fr 1fr; */
   float: right;
-  padding-left: 4em;
+  padding-left: 14em;
 }
 
 .about-me {
-  margin-top: 5em;
+  margin-top: 0.5em;
   float: left;
+  margin-left: 1em;
+  color: rgb(95, 26, 72);
 }
 
 .detail {
@@ -88,6 +92,11 @@
   display: grid;
   grid-template-rows: 300px 300px 300px;
   grid-template-columns: 1fr 1fr 1fr;
+}*/
+
+.email {
+  background-color: rgb(151, 33, 112);
+  color: rgb(151, 33, 112);
 }
 
 /*HOME PAGE*/
@@ -143,8 +152,8 @@ body {
 }
 
 .bottOn {
-  background-color: rgb(199, 48, 149);
-  border-color: rgb(170, 47, 170);
+  background-color: rgb(95, 26, 72);
+  border-color: rgb(95, 26, 72);
   margin-top: 2em;
   margin-right: -1em;
 }
@@ -159,4 +168,38 @@ body {
   height: 60%;
   border-radius: 10%;
   border-style: hidden;
+}
+
+/* TABLE */
+
+.table1 {
+  margin-left: 21em;
+  text-align: right;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #ffeadc;
+  background-color: #ffeadc;
+  border-spacing: 80px;
+  padding: 5px;
+}
+.table2 {
+  margin-left: 21em;
+  text-align: right;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #cad6f8;
+  background-color: #cad6f8;
+  border-spacing: 80px;
+  border-collapse: separate;
+}
+.table3 {
+  margin-left: 21em;
+  text-align: right;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #d9ce9a;
+  background-color: #d9ce9a;
+  border-spacing: 80px;
+  border-collapse: separate;
+}
+
+td {
+  padding-bottom: 50px;
 }
