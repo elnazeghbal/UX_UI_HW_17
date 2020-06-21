@@ -12,6 +12,97 @@
   })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
   <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Playfair Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source Sans Pro" rel="stylesheet">
+  
+ <style>
+    
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #ACD4DD;
+    color: white;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: white;
+    color: white;
+  }
+</style>
+<script>
+$(document).ready(function(){
+  $(".hide").click(function(){
+    $(".p1").slideUp(1500);
+  });
+});
+</script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-168986272-1');
+</script>
+  
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -40,7 +131,7 @@
     </nav>
     </header>
    
-     <section id="intro">
+     <section id="intro" class="p1">
       <div class="heroGridArea">
         <div id="hiEli">
           <h2>HEY! THERE</h2>
@@ -82,34 +173,147 @@
         
       </div>
     </section> 
-    <section>
+    <section id="aboutMeSection">
       <div class="about-me">
-        <h1><b>SOME WORDS ABOUT ME</b></h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>ABOUT ME</h1>
 
-        <p>
+        <p class="about.me.P">
           Every person has their own unique Story here is a glimpse into mine.
-        </p>
-        <p>I design and grow products that people love.</p>
-        <p>
+        <br>
+        <br>
+       I design and grow products that people love.
+       <br>
+       <br>
           I'm passionate about Improving the lives of other through
-        </p>
-        <p>
+          <br>
+          <br>
           design and designing that leave A positive impact on people,
           environment and the society.
-        </p>
-        <p>
+          <br>
+        <br>
           And am constantly looking to learn new things everyday.
         </p>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+      </div>
+      <div class="skillSection">
+        <div class="skillItem" id="UX">
+          <h6>User Exprience</h6>
+          <p class="pDetails">
+            User Research
+            <br>
+                   Competitive Analysis
+            <br>
+                  Persona Development 
+            <br>
+                      Usability Testing 
+            <br>
+                      Prototyping
+            <br>
+                      Wireframing
+            <br>
+                     Iterating
+            <br>
+                     Storyboarding
+          </p>
+        </div>
+        <div class="skillItem" id="UI">
+          <h6> USER INTERFACE</h6>
+          <p class="pDetails">
+            Visual Design
+            <br>
+            Design Research
+            <br>
+            UI Style Guide
+            <br>
+            Animation
+            <br>
+            Responsive Web Design
+            <br>
+            UI Prototyping </p>
+        </div>
+        <div class="skillItem" id="webDevelop">
+          <h6> WEB Development</h6>
+          <p class="pDetails">
+            HTML5
+            <br>
+            CSS
+            <br>
+            Javascript
+            <br>
+            jQuery
+            <br>
+            Visual Studio Code
+            <br>
+            Bootstrap
+            <br>
+            GitHub
+            <br>
+            Adobe XD
+            <br>
+            InVision
+            <br>
+            Figma
+           </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="work">
+      <div class="newTable">
+        <div class="left1">
+          <img
+            src="images/newKnotsoflove1.png"
+            style="width: 70%;"
+            class="img1"
+          />
+        </div>
+        <div class="right1">
+          <h1>
+            Redesigning the site navigation
+          </h1>
+          <h1>of non-profit website.</h1>
+        </div>
+      </div>
+    
+  
+    
+        <div class="newTable2">
+          <div class="left2">
+            <img
+              src="images/new1government.png"
+              style="width: 70%;"
+              class="img2"
+            />
+          </div>
+          <div class="right2">
+            <h1>
+              Redesigning the site navigation
+            </h1>
+            <h1>of non-profit website.</h1>
+          </div>
+        </div>
+ 
+      </section>
+    </section>
+  </body>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169014458-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169014458-1');
+</script>
+
+</html>
+
+
+
 
         <!-- <h1>You'll find my contact details down below!!</h1> -->
 
@@ -135,48 +339,6 @@
             >My Resume</a
           >
         </button> -->
-      </div>
-    </section>
-    <section>
-      <div class="newTable">
-        <div class="left1">
-          <img
-            src="images/newKnotsoflove1.png"
-            style="width: 70%;"
-            class="img1"
-          />
-        </div>
-        <div class="right1">
-          <h1>
-            Redesigning the site navigation
-          </h1>
-          <h1>of non-profit website.</h1>
-        </div>
-      </div>
-    </section>
-  
-      <section>
-        <div class="newTable2">
-          <div class="left2">
-            <img
-              src="images/new1government.png"
-              style="width: 70%;"
-              class="img2"
-            />
-          </div>
-          <div class="right2">
-            <h1>
-              Redesigning the site navigation
-            </h1>
-            <h1>of non-profit website.</h1>
-          </div>
-        </div>
- 
-      </section>
-
-
-
-
         <!-- <table cellpadding="0" cellspacing="0" class="table1"> -->
         <!-- <tr><td>
             <th> -->
@@ -218,16 +380,4 @@
 
         <img src="images/p2.png" class="table" />
       </div> -->
-    </section>
-  </body>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169014458-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-169014458-1');
-</script>
-
-</html>

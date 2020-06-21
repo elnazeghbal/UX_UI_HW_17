@@ -1,12 +1,7 @@
-/* .inline-block {
-  display: flex;
-  vertical-align: top;
-  width: 100%;
-  height: 260px;
-} */
 body {
   display: block;
-  margin: 8px;
+  margin: 0;
+  padding: 0;
 }
 header {
   position: sticky;
@@ -23,7 +18,7 @@ header {
   margin: 0px 4%;
 }
 .navcolor {
-  color: rgb(228, 158, 173);
+  color: #b32472;
   font-weight: 900;
   font-family: "Roboto", "Source Sans Pro";
 }
@@ -50,11 +45,12 @@ header {
 #intro {
   background-image: linear-gradient(
     to bottom,
-    rgb(255, 247, 244),
-    rgb(253, 242, 237)
+    rgb(255, 253, 253),
+    rgb(255, 244, 239)
   );
-  /* padding: 0 30px; */
-  height: 660px;
+  padding: 0 80px;
+  height: 750px;
+  margin-bottom: -1em;
 }
 section {
   display: block;
@@ -66,7 +62,7 @@ h2 {
   font-weight: 200;
   font-style: italic;
   letter-spacing: 1px;
-  color: rgb(228, 158, 173);
+  color: rgb(207, 126, 144);
 }
 h1 {
   font-family: "Playfair Display";
@@ -74,14 +70,15 @@ h1 {
   font-size: 4.5vw;
   font-weight: 100;
   letter-spacing: 2px;
-  color: rgb(95, 26, 72);
+  color: #b32472;
   word-wrap: keep-all;
+  margin-top: -0.1em;
 }
 #resume {
   grid-area: resume;
   /* padding-bottom: 30px; */
   float: left;
-  margin-top: 15%;
+  margin-top: 0.4em;
 }
 #intro button {
   margin-top: 10px;
@@ -98,35 +95,15 @@ h1 {
   font-weight: 400;
 }
 #buttonColor {
-  color: rgb(95, 26, 72);
+  color: #b32472;
   font-weight: 900;
   font-family: "Playfair Display";
 }
-#icon {
+/* #icon {
   grid-area: icon;
   float: left;
   margin-top: 18%;
-}
-
-/* .logo {
-  width: 180%;
-  height: 10%;
-  border-radius: 30%;
-  background-size: cover;
-  text-align: right;
-  float: left;
-  margin-top: 2.8em;
-  float: right;
-  margin-right: -3.3em;
 } */
-
-/* .text-frame {
-  margin-top: 1.3em;
-  font-size: 130%;
-  /* text-align: center;*/
-/* color: rgb(151, 33, 112);
-  float: left;
-  margin-right: 13em; */
 
 #hiEli {
   grid-area: hiEli;
@@ -136,16 +113,16 @@ h1 {
 #myImage {
   max-width: 120%;
   grid-area: myImage;
-  margin-top: 40px;
+  margin-top: -0.4em;
 
   border-radius: 50%;
 }
 #about {
   grid-area: about;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
-#email {
+/* #email {
   font-family: "Playfair Display";
   font-size: 2vw;
   font-weight: 100;
@@ -154,100 +131,47 @@ h1 {
   font-size: 90%;
   float: left;
   margin-top: 18%;
-}
+} */
 
 .heroGridArea {
   max-width: 100%;
-  height: 65%;
-  margin: 0px;
+  height: 100%;
+
   display: grid;
-  grid-template-rows: 15% 40% 10%;
+  grid-template-rows: 25% 55% 20%;
   grid-template-columns: 75% 25%;
   grid-template-areas:
     "hiEli hiEli"
     "about myImage"
-    "email  email"
-    "resume resume"
-    "icon icon";
+    "resume resume";
 }
 
-#intro {
-  background-image: linear-gradient(to bottom, rgb(253, 241, 242));
-  padding: 0 80px;
+#aboutMeSection {
+  max-width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255, 249, 249),
+    rgb(255, 248, 250)
+  );
 }
-
-/* .myImage {
-  vertical-align: left;
-  width: 40%;
-  border-radius: 50%;
-} */
-/* .heroImg {
-  text-align: left;
-  margin-left: 2em;
+.about.me.P {
+  font-family: "Playfair Display";
+  /* font-size: 38px; */
+  font-size: 5vw;
+  font-weight: 200;
+  font-style: italic;
 }
-
-.heaDer {
-  padding: center;
-  font-weight: bolder;
-  margin-top: 1%;
-} */
-
-/* .boTTonHome {
-  background-color: rgb(151, 33, 112);
-  border-color: rgb(151, 33, 112);
-}
-.bottonHome {
-  /* text-align: center; */
-/* color: rgb(95, 26, 72);
-  font-size: 70%; */
-
-/* .inCenter {
-  text-align: center;
-}
-.left {
-  text-align: right;
-  padding: right;
-  width: 100%;
-}
-.heroP {
-  margin-left: auto;
-}
-.content { */
-/* vertical-align: right;
-  padding: 20px;
-  height: 25px;
-  color: white;
-  font-size: 18px;
-  margin: 0px 3%;
-  display: grid;
-  grid-template-rows: 300px 300px 300px;
-  grid-template-columns: 1fr 1fr 1fr; */
-/* float: right;
-  padding-left: 14em;
-}*/
-
 .about-me {
-  margin-top: 7.5em;
   float: center;
   text-align: center;
+  font-family: "Playfair Display";
+  /* font-size: 38px; */
+  font-size: 1.2vw;
+  font-weight: 550;
 
   color: rgb(95, 26, 72);
 }
 
-/* .detail {
-  display: flex;
-} */
-/*.category {
-  margin: 0px 3%;
-  display: grid;
-  grid-template-rows: 300px 300px 300px;
-  grid-template-columns: 1fr 1fr 1fr;
-}*/
-
-/*HOME PAGE*/
-/* body {
-  background-color: rgb(253, 241, 242);
-} */
 .main {
   display: flex;
   flex-direction: row;
@@ -256,66 +180,38 @@ h1 {
   top: 15%;
   width: 100%;
 }
-.main-container {
-  /* height: 200px;
-  width: 95%; */
-  float: left;
-  color: rgb(204, 63, 204);
-}
-.main-laptop {
-  float: left;
-}
-.homePage {
-  width: 22%;
-  height: 7%;
-  border: rgb(253, 241, 242);
-  background-color: rgb(255, 234, 236);
-  border-radius: 10%;
-  float: right;
-  margin-top: 8.5em;
-  margin-right: -4em;
-}
-.myjob {
-  float: right;
-  margin-top: 12em;
-  color: rgb(204, 63, 204);
-  margin-right: -5em;
-}
-.main-h1 {
-  float: laft;
-  margin-left: -5em;
-}
-.main-h2 {
-  float: right;
-  margin-right: -10em;
-  color: rgb(231, 64, 162);
-}
-
-.boTTon {
-  text-align: center;
-  color: aliceblue;
-}
-
-.bottOn {
-  background-color: rgb(204, 63, 204);
-  border-color: rgb(204, 63, 204);
-  margin-top: 2em;
-  margin-right: -1em;
-}
-
-.lapTop {
-  margin-top: 10em;
-  float: left;
-  margin-left: -4em;
+.skillSection {
+  margin-top: 5em;
   display: flex;
-  align-content: center;
-  width: 60%;
-  height: 60%;
-  border-radius: 10%;
-  border-style: hidden;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
 }
+.skillItem {
+  display: inline-block;
+  justify-content: center;
+}
+h6 {
+  font-family: "Playfair Display";
+  font-weight: 500;
+  font-size: 24px;
+  color: rgb(207, 126, 144);
+  letter-spacing: 1px;
+  margin: 1px 10px 10px 0px;
+}
+.pDetails {
+  font-family: "Playfair Display";
+  /* font-size: 38px; */
+  font-size: 1vw;
+  font-weight: 550;
 
-/* TABLE */
+  letter-spacing: 1px;
+  color: rgb(95, 26, 72);
+  text-align: left;
+  line-height: 170%;
+}
+.work {
+  background-color: aqua;
+}
 
 .newTable {
   display: flex;
@@ -390,3 +286,156 @@ h1 {
 td {
   padding-bottom: 50px;
 }
+/* .inline-block {
+  display: flex;
+  vertical-align: top;
+  width: 100%;
+  height: 260px;
+} */
+/* .logo {
+  width: 180%;
+  height: 10%;
+  border-radius: 30%;
+  background-size: cover;
+  text-align: right;
+  float: left;
+  margin-top: 2.8em;
+  float: right;
+  margin-right: -3.3em;
+} */
+
+/* .text-frame {
+  margin-top: 1.3em;
+  font-size: 130%;
+  /* text-align: center;*/
+/* color: rgb(151, 33, 112);
+  float: left;
+  margin-right: 13em; */
+/* .detail {
+  display: flex;
+} */
+/*.category {
+  margin: 0px 3%;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+}*/
+
+/*HOME PAGE*/
+/* body {
+  background-color: rgb(253, 241, 242);
+} */
+/* #intro {
+  background-image: linear-gradient(to bottom, rgb(253, 241, 242));
+  /* padding: 0 80px; 
+} */
+
+/* .myImage {
+  vertical-align: left;
+  width: 40%;
+  border-radius: 50%;
+} */
+/* .heroImg {
+  text-align: left;
+  margin-left: 2em;
+}
+
+.heaDer {
+  padding: center;
+  font-weight: bolder;
+  margin-top: 1%;
+} */
+
+/* .boTTonHome {
+  background-color: rgb(151, 33, 112);
+  border-color: rgb(151, 33, 112);
+}
+.bottonHome {
+  /* text-align: center; */
+/* color: rgb(95, 26, 72);
+  font-size: 70%; */
+
+/* .inCenter {
+  text-align: center;
+}
+.left {
+  text-align: right;
+  padding: right;
+  width: 100%;
+}
+.heroP {
+  margin-left: auto;
+}
+.content { */
+/* vertical-align: right;
+  padding: 20px;
+  height: 25px;
+  color: white;
+  font-size: 18px;
+  margin: 0px 3%;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr; */
+/* float: right;
+  padding-left: 14em;
+}*/
+/* .main-container {
+  /* height: 200px;
+  width: 95%; */
+/* float: left;
+  color: rgb(204, 63, 204);
+} */
+/* .main-laptop {
+  float: left;
+} */
+/* .homePage {
+  width: 22%;
+  height: 7%;
+  border: rgb(253, 241, 242);
+  background-color: rgb(255, 234, 236);
+  border-radius: 10%;
+  float: right;
+  margin-top: 8.5em;
+  margin-right: -4em;
+} */
+/* .myjob {
+  float: right;
+  margin-top: 12em;
+  color: rgb(204, 63, 204);
+  margin-right: -5em;
+}
+.main-h1 {
+  float: laft;
+  margin-left: -5em;
+} */
+/* .main-h2 {
+  float: right;
+  margin-right: -10em;
+  color: rgb(231, 64, 162);
+}
+
+.boTTon {
+  text-align: center;
+  color: aliceblue;
+} */
+
+/* .bottOn {
+  background-color: rgb(204, 63, 204);
+  border-color: rgb(204, 63, 204);
+  margin-top: 2em;
+  margin-right: -1em;
+}
+
+.lapTop {
+  margin-top: 10em;
+  float: left;
+  margin-left: -4em;
+  display: flex;
+  align-content: center;
+  width: 60%;
+  height: 60%;
+  border-radius: 10%;
+  border-style: hidden;
+} */
+
+/* TABLE */
