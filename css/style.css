@@ -7,8 +7,6 @@ header {
   position: sticky;
   top: 0px;
   background-color: #e5e2e2;
-}
-header {
   display: block;
 }
 
@@ -210,8 +208,10 @@ h6 {
   line-height: 170%;
 }
 .work {
-  background-color: aqua;
+  background-image: linear-gradient(to bottom, rgba(232,245,252,1), rgba(252,238,231,1));
+  width: 100%;
 }
+
 
 .newTable {
   display: flex;
