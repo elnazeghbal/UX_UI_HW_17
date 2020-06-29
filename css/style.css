@@ -218,22 +218,34 @@ h6 {
 }
 
 #workGrid{
+
   display: grid;
-  padding: 0px 50px 0px 50px 0px 50px 0px 50px;
-  grid-template-rows: 460px 460px 460px 460px;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+   padding: 0px 50px 0px 50px; 
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-rows: 460px 460px 460px 460px ;
   grid-template-areas:
       "huloop"
-      "knotsOfLove"
+      "KnotsOfLove"
       "dolgovern"
-      "entertainment";
+      "entertainment"; 
+}
+
+div.workGridArea img {
+  width: 50%;
+  height: auto;
+  vertical-align: middle;
+  backface-visibility: hidden;
+}
+.container:hover .overlay {
+  opacity: 1;
+  display: flex;
+  backface-visibility: hidden;
 }
 #huloop{
   grid-area: huloop;
-  background-image: url(https://github.com/elnazeghbal/UX_UI_HW_17/blob/master/images/huloo.main.portfolio.png);
 }
 
-}
+
 .workGridArea{
   background-position: center;
   background-size: cover;
@@ -244,17 +256,21 @@ h6 {
 .container{
   position: relative;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .workstudyHeader{
-    background-color: rgba(29, 55, 72, 0.7);
+    background-color: rgba(58, 132, 216, 0.7);
     font-family: 'Playfair Display';
-    font-size: 30px;
+    font-size: 18px;
     font-weight: 100;
     /* letter-spacing: 10; */
-    padding: 10px 35px;
-    height: 46px;
+    padding: 10px 15px;
+    height: 26px;
     color: white;
-    border-left: 8px solid rgb(224, 166, 220);
+    /* border-left: 8px solid rgb(224, 166, 220); */
+    position: absolute;
+    left: 335px;
 }
 .text{
   font-family: 'Roboto','Source Sans Pro';
@@ -273,13 +289,15 @@ h6 {
     align-content: space-between;
     justify-content: center;
     height: 100%;
-    width: 101%;
+    width: 50%;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgb(224, 166, 220);
+    /* background-color: rgb(252, 225, 250); */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+overflow: hidden;
+    opacity: 1;
     /* background-color: rgba(29, 55, 72, 0.8); */
 }
 
@@ -291,16 +309,92 @@ h6 {
   line-height: 36px;
   color: white;
   letter-spacing: 1px;
+  overflow: hidden;
 }
-#knotsOfLove{
-  grid-area: knotsOfLove;
-  background-image: url(https://github.com/elnazeghbal/UX_UI_HW_17/blob/master/images/newKnotsoflove1.png);
+.overlay-subhead {
+  margin: 10px 24px 20px 24px;
+  font-family: 'Roboto','Source Sans Pro';
+  font-weight: 200;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 1px;
+  overflow: hidden;
+}
+.overlay-body {
+  margin: 10px 55px 30px 55px;
+  font-family: 'Roboto','Source Sans Pro';
+  font-weight: 100;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 1px;
+  overflow: hidden;
+}
+.work button {
+  font-family: 'Roboto','Source Sans Pro';
+  margin-top: 10px;
+  font-size: 8pt;
+  font-weight: 400;
+  background-color: rgba(58, 132, 216, 0.7);
+  border: 1px solid rgba(58, 132, 216, 0.7);
+  width: 160px;
+  color: white;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  padding: 10px;
+  align-content: center;
+  margin-bottom: 80px;
+}
+.work button:hover {
+  font-family: 'Roboto','Source Sans Pro';
+  margin-top: 10px;
+  font-size: 8pt;
+  font-weight: 400;
+  background-color: rgba(15, 58, 107, 0.7);
+  border: 1px solid rgba(15, 58, 107, 0.7);
+  width: 160px;
+  color: white;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  padding: 10px;
+  align-content: center;
+  margin-bottom: 80px;
+}
+
+#KnotsOfLove{
+  grid-area: KnotsOfLove;
+  /* background-image: url(https://github.com/elnazeghbal/UX_UI_HW_17/blob/master/images/newKnotsoflove1.png); */
 }
 #dolgovern{
   grid-area: dolgovern;
-  background-image: url(https://github.com/elnazeghbal/UX_UI_HW_17/blob/master/images/new1government.png);
+  /* background-image: url(https://github.com/elnazeghbal/UX_UI_HW_17/blob/master/images/new1government.png); */
 }
 #entertainment{
   grid-area: entertainment;
-  background-image: url( https://github.com/elnazeghbal/UX_UI_HW_17/blob/master/images/newentertainment.png);
+  /* background-image: url( https://github.com/elnazeghbal/UX_UI_HW_17/blob/master/images/newentertainment.png); */
 }
+.deleteSpace{
+  margin-top: -6.3em;
+}
+footer{
+background: linear-gradient( to bottom, whitesmoke 0%, #f4f9fc 18%, #f4e1fb 55%, #f4c2de 100% );
+    width: 100%;
+    display: inline-block;
+}
+
+footer ul {
+    align-self: auto;
+    display: inline-block;
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+footer li {
+  float: left;
+  padding: 14px 14px;
+}
+footer p {
+  float: right;
+  margin-right: 45px;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
