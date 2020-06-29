@@ -209,237 +209,98 @@ h6 {
 }
 .work {
   background-image: linear-gradient(to bottom, rgba(232,245,252,1), rgba(252,238,231,1));
-  width: 100%;
 }
 
 
-.newTable {
-  display: flex;
+.workHead{
+  width: 10px;
+  height: 50px;
 }
 
-.newTable > div {
-  flex: 1;
+#workGrid{
+  display: grid;
+  padding: 0px 50px 0px 50px 0px 50px 0px 50px;
+  grid-template-rows: 460px 460px 460px 460px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+      "huloop"
+      "knotsOfLove"
+      "dolgovern"
+      "entertainment";
 }
-.right1 {
-  margin-left: 5em;
-  color: rgb(95, 26, 72);
-}
-.title{
-  font-size: 25px;
-  float: right;
-}
-.left1 {
-  flex-grow: 1;
-}
-/* .table1 {
-  border-color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  flex-direction: row; */
-/* /* border: 1px solid #ffeadc; */
-/* background-color: #ffeadc; */
-/* border-spacing: 80px; */
-/* padding: 5px; */
-
-.img1 {
-text-align: right;
-  width: 40%;
-
-}
-/* .explain1 {
-  margin-right: 16em;
-  text-align: right;
-}  */
-/* .table2 {
-  margin-right: 15em;
-  text-align: right;
-  font-family: Arial, Helvetica, sans-serif;
-  /* border: 1px solid #cad6f8;
-  background-color: #cad6f8;
-  border-spacing: 80px; */
-/* border-collapse: separate;*/
-
-.newTable2 {
-  display: flex;
-  align-items: center;
+#huloop{
+  grid-area: huloop;
+  background-image: url(https://github.com/elnazeghbal/UX_UI_HW_17/blob/master/images/huloo.main.portfolio.png);
 }
 
-.newTable2 > div {
-  flex: 1;
 }
-.right2 {
-  margin-right: 30em;
-  color: rgb(95, 26, 72);
-}
-.left2 {
-  flex-grow: 1;
-}
-.img2 {
-  text-align: right;
-  margin-left: 50em;
-}
-.table3 {
-  margin-left: 15em;
-  text-align: left;
-  font-family: Arial, Helvetica, sans-serif;
-  /* border: 1px solid #d9ce9a;
-  background-color: #d9ce9a;
-  border-spacing: 80px; */
-  border-collapse: separate;
-}
-
-td {
-  padding-bottom: 50px;
-}
-/* .inline-block {
-  display: flex;
-  vertical-align: top;
-  width: 100%;
-  height: 260px;
-} */
-/* .logo {
-  width: 180%;
-  height: 10%;
-  border-radius: 30%;
+.workGridArea{
+  background-position: center;
   background-size: cover;
-  text-align: right;
-  float: left;
-  margin-top: 2.8em;
-  float: right;
-  margin-right: -3.3em;
-} */
-
-/* .text-frame {
-  margin-top: 1.3em;
-  font-size: 130%;
-  /* text-align: center;*/
-/* color: rgb(151, 33, 112);
-  float: left;
-  margin-right: 13em; */
-/* .detail {
+  background-repeat: no-repeat;
+  margin: 40px;
+  cursor: pointer;
+}
+.container{
+  position: relative;
   display: flex;
-} */
-/*.category {
-  margin: 0px 3%;
-  display: grid;
-  grid-template-rows: 300px 300px 300px;
-  grid-template-columns: 1fr 1fr 1fr;
-}*/
-
-/*HOME PAGE*/
-/* body {
-  background-color: rgb(253, 241, 242);
-} */
-/* #intro {
-  background-image: linear-gradient(to bottom, rgb(253, 241, 242));
-  /* padding: 0 80px; 
-} */
-
-/* .myImage {
-  vertical-align: left;
-  width: 40%;
-  border-radius: 50%;
-} */
-/* .heroImg {
-  text-align: left;
-  margin-left: 2em;
 }
-
-.heaDer {
-  padding: center;
-  font-weight: bolder;
-  margin-top: 1%;
-} */
-
-/* .boTTonHome {
-  background-color: rgb(151, 33, 112);
-  border-color: rgb(151, 33, 112);
+.workstudyHeader{
+    background-color: rgba(29, 55, 72, 0.7);
+    font-family: 'Playfair Display';
+    font-size: 30px;
+    font-weight: 100;
+    /* letter-spacing: 10; */
+    padding: 10px 35px;
+    height: 46px;
+    color: white;
+    border-left: 8px solid rgb(224, 166, 220);
 }
-.bottonHome {
-  /* text-align: center; */
-/* color: rgb(95, 26, 72);
-  font-size: 70%; */
-
-/* .inCenter {
-  text-align: center;
-}
-.left {
-  text-align: right;
-  padding: right;
-  width: 100%;
-}
-.heroP {
-  margin-left: auto;
-}
-.content { */
-/* vertical-align: right;
-  padding: 20px;
-  height: 25px;
+.text{
+  font-family: 'Roboto','Source Sans Pro';
   color: white;
-  font-size: 18px;
-  margin: 0px 3%;
-  display: grid;
-  grid-template-rows: 300px 300px 300px;
-  grid-template-columns: 1fr 1fr 1fr; */
-/* float: right;
-  padding-left: 14em;
-}*/
-/* .main-container {
-  /* height: 200px;
-  width: 95%; */
-/* float: left;
-  color: rgb(204, 63, 204);
-} */
-/* .main-laptop {
-  float: left;
-} */
-/* .homePage {
-  width: 22%;
-  height: 7%;
-  border: rgb(253, 241, 242);
-  background-color: rgb(255, 234, 236);
-  border-radius: 10%;
-  float: right;
-  margin-top: 8.5em;
-  margin-right: -4em;
-} */
-/* .myjob {
-  float: right;
-  margin-top: 12em;
-  color: rgb(204, 63, 204);
-  margin-right: -5em;
-}
-.main-h1 {
-  float: laft;
-  margin-left: -5em;
-} */
-/* .main-h2 {
-  float: right;
-  margin-right: -10em;
-  color: rgb(231, 64, 162);
-}
-
-.boTTon {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
   text-align: center;
-  color: aliceblue;
-} */
-
-/* .bottOn {
-  background-color: rgb(204, 63, 204);
-  border-color: rgb(204, 63, 204);
-  margin-top: 2em;
-  margin-right: -1em;
+  line-height: 22px;
+}
+.overlay{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    justify-content: center;
+    height: 100%;
+    width: 101%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(224, 166, 220);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgba(29, 55, 72, 0.8); */
 }
 
-.lapTop {
-  margin-top: 10em;
-  float: left;
-  margin-left: -4em;
-  display: flex;
-  align-content: center;
-  width: 60%;
-  height: 60%;
-  border-radius: 10%;
-  border-style: hidden;
-} */
-
-/* TABLE */
+.overlay-head{
+  margin: 60px 24px 20px 24px;
+  font-family: 'Playfair Display';
+  font-weight: 200;
+  font-size: 26px;
+  line-height: 36px;
+  color: white;
+  letter-spacing: 1px;
+}
+#knotsOfLove{
+  grid-area: knotsOfLove;
+  background-image: url(https://github.com/elnazeghbal/UX_UI_HW_17/blob/master/images/newKnotsoflove1.png);
+}
+#dolgovern{
+  grid-area: dolgovern;
+  background-image: url(https://github.com/elnazeghbal/UX_UI_HW_17/blob/master/images/new1government.png);
+}
+#entertainment{
+  grid-area: entertainment;
+  background-image: url( https://github.com/elnazeghbal/UX_UI_HW_17/blob/master/images/newentertainment.png);
+}
