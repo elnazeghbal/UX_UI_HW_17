@@ -208,7 +208,7 @@ h6 {
   line-height: 170%;
 }
 .work {
-  background-image: linear-gradient(to bottom, rgba(232,245,252,1), rgba(252,238,231,1));
+  background-image: linear-gradient(to bottom, rgba(232,245,252,1), rgb(255, 248, 250));
 }
 
 
@@ -232,14 +232,14 @@ h6 {
 
 div.workGridArea img {
   width: 50%;
-  height: auto;
+  height: 97%;
   vertical-align: middle;
   backface-visibility: hidden;
 }
 .container:hover .overlay {
   opacity: 1;
   display: flex;
-  backface-visibility: hidden;
+  overflow: hidden;
 }
 #huloop{
   grid-area: huloop;
@@ -307,7 +307,7 @@ overflow: hidden;
   font-weight: 200;
   font-size: 26px;
   line-height: 36px;
-  color: white;
+  color: rgba(15, 58, 107, 0.7);
   letter-spacing: 1px;
   overflow: hidden;
 }
@@ -375,26 +375,34 @@ overflow: hidden;
 .deleteSpace{
   margin-top: -6.3em;
 }
-footer{
-background: linear-gradient( to bottom, whitesmoke 0%, #f4f9fc 18%, #f4e1fb 55%, #f4c2de 100% );
-    width: 100%;
-    display: inline-block;
+.footer {
+  background-image: linear-gradient(to bottom, #e5e2e2, rgb(255, 248, 250));
+  padding: 10px;
+  align-self: center;
 }
-
-footer ul {
-    align-self: auto;
-    display: inline-block;
-    list-style-type: none;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-footer li {
-  float: left;
-  padding: 14px 14px;
-}
-footer p {
-  float: right;
-  margin-right: 45px;
+#footerContent {
   display: flex;
-  align-items: center;
-  padding-top: 20px;
+  flex-direction: row;
+  /* margin: 0px 4%; */
+}
+#socialIcons {
+  margin-top: 4px;
+  display: flex;
+  width: 45%;
+}
+.footer img {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 35%;
+}
+.p3 {
+  color: rgb(228, 158, 173);
+  font-size: 10pt;
+  /* box-align: center; */
+  margin-top: 20px;
+  width: 15%;
+  font-family: 'Roboto','Source Sans Pro'!important;
+text-align: center;
+margin-left: 29em;
+}
