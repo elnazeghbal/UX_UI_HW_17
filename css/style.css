@@ -41,11 +41,12 @@ header {
   margin-left: 38%;
 }
 #intro {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to bottom,
     rgb(255, 253, 253),
     rgb(255, 244, 239)
-  );
+  ); */
+  background-color:  linear-gradient(to bottom, rgb(255, 255, 255), rgba(252,238,231));;
   padding: 0 80px;
   height: 750px;
   margin-bottom: -1em;
@@ -60,7 +61,8 @@ h2 {
   font-weight: 200;
   font-style: italic;
   letter-spacing: 1px;
-  color: rgb(207, 126, 144);
+  color: rgb(228, 158, 173);
+  /* color: #619FB4; */
 }
 h1 {
   font-family: "Playfair Display";
@@ -208,7 +210,7 @@ h6 {
   line-height: 170%;
 }
 .work {
-  background-image: linear-gradient(to bottom, rgba(232,245,252,1), rgb(255, 248, 250));
+  background-image: linear-gradient(to bottom, rgb(239, 249, 255), rgb(255, 248, 250));
 }
 
 
@@ -234,12 +236,12 @@ div.workGridArea img {
   width: 50%;
   height: 97%;
   vertical-align: middle;
-  backface-visibility: hidden;
+
 }
 .container:hover .overlay {
   opacity: 1;
   display: flex;
-  overflow: hidden;
+
 }
 #huloop{
   grid-area: huloop;
@@ -247,6 +249,7 @@ div.workGridArea img {
 
 
 .workGridArea{
+  position: relative;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -254,7 +257,7 @@ div.workGridArea img {
   cursor: pointer;
 }
 .container{
-  position: relative;
+  /* position: relative; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -269,7 +272,7 @@ div.workGridArea img {
     height: 26px;
     color: white;
     /* border-left: 8px solid rgb(224, 166, 220); */
-    position: absolute;
+    /* position: absolute; */
     left: 335px;
 }
 .text{
@@ -286,19 +289,17 @@ div.workGridArea img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: space-between;
+    /* align-content: space-between; */
     justify-content: center;
-    height: 100%;
+    height: 118%;
     width: 50%;
     opacity: 0;
     transition: .5s ease;
-    /* background-color: rgb(252, 225, 250); */
+    background-color: rgba(58, 132, 216, 0.7);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-overflow: hidden;
-    opacity: 1;
-    /* background-color: rgba(29, 55, 72, 0.8); */
+
 }
 
 .overlay-head{
@@ -309,7 +310,7 @@ overflow: hidden;
   line-height: 36px;
   color: rgba(15, 58, 107, 0.7);
   letter-spacing: 1px;
-  overflow: hidden;
+
 }
 .overlay-subhead {
   margin: 10px 24px 20px 24px;
@@ -318,7 +319,7 @@ overflow: hidden;
   font-size: 20px;
   color: white;
   letter-spacing: 1px;
-  overflow: hidden;
+
 }
 .overlay-body {
   margin: 10px 55px 30px 55px;
@@ -327,7 +328,7 @@ overflow: hidden;
   font-size: 16px;
   color: white;
   letter-spacing: 1px;
-  overflow: hidden;
+
 }
 .work button {
   font-family: 'Roboto','Source Sans Pro';
